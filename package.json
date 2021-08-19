@@ -1,0 +1,22 @@
+{
+  "name": "09-readme-generator-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyothybaby/09-README-Generator-Node.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jyothybaby/09-README-Generator-Node.js/issues"
+  },
+  "homepage": "https://github.com/jyothybaby/09-README-Generator-Node.js#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
