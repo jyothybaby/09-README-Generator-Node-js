@@ -17,7 +17,7 @@ ${data.description}
 To install necessary dependencies, run the following command : "${data.command}"
 
 ## Usage
-In order to use this application," ${data.usage}"
+In order to use this application, " ${data.usage}" 
 
 ## License
 
