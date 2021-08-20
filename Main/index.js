@@ -1,49 +1,51 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-
-const markDownTemplate = (answers) =>
-
-`## **${answers.title}**
-![GitHub license](https://img.shields.io/badge/license-${answers.license}-blue.svg)
-## Description
-${answers.description}
-## Table of Contents 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [question](#questions)
-
-## Installation
-To install necessary dependencies, run the following command : "${answers.command}"
-
-## Usage
-In order to use this application," ${answers.usage}"
-
-## License
-
-This project is licenced under the "${answers.license}" license
-
-## Contributing
-
- contributors: "${answers.contributing}"
-## Tests
-
-To run tests, run this command : "${answers.test}"
-
-## Questions
-
-If you have any questions about the repo, open an issue or contact me directly at ${answers.email}. You can find more of my work at
- [${answers.username}](https://github.com/${answers.username}/).
-
- https://github.com/${answers.username}/${answers.title}
-`;
+const utils = require("utils");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 
+// const markDownTemplate = (answers) =>
 
-inquirer
-    .prompt([
+// `## **${answers.title}**
+// ![GitHub license](https://img.shields.io/badge/license-${answers.license}-blue.svg)
+// ## Description
+// ${answers.description}
+// ## Table of Contents 
+// - [Installation](#installation)
+// - [Usage](#usage)
+// - [License](#license)
+// - [Contributing](#contributing)
+// - [Tests](#tests)
+// - [question](#questions)
+
+// ## Installation
+// To install necessary dependencies, run the following command : "${answers.command}"
+
+// ## Usage
+// In order to use this application," ${answers.usage}"
+
+// ## License
+
+// This project is licenced under the "${answers.license}" license
+
+// ## Contributing
+
+//  contributors: "${answers.contributing}"
+// ## Tests
+
+// To run tests, run this command : "${answers.test}"
+
+// ## Questions
+
+// If you have any questions about the repo, open an issue or contact me directly at " ${answers.email}". You can find more of my work at
+//  [${answers.username}](https://github.com/${answers.username}/).
+
+//  https://github.com/${answers.username}/${answers.title}
+// `;
+
+
+
+const questions = [
         {
             type:"input",
             name:"title",
@@ -91,12 +93,28 @@ inquirer
             message: "What is your Email Id: ?  ",
         },
         
-    ])
+    ]
 
-    .then((answers) => {
-        const readmeContent = markDownTemplate(answers);
-        fs.writeFile("README.MD", readmeContent, (err)=>
-        err? console.log(err): console.log("Sucessfully created the File!!")
+    // .then((answers) => {
+    //     const readmeContent = markDownTemplate(answers);
+    //     fs.writeFile("README.MD", readmeContent, (err)=>
+    //     err? console.log(err): console.log("Sucessfully created the File!!")
        
-        );
-    });
+    //     );
+    // });
+
+
+    function writeToFile(fileName, data) {
+        fs.writeFile(fileName,data,(err) => 
+        err? console.log(err): console.log("Sucessfully created the File!!")
+        )
+    }
+
+    function init() {
+        inquirer.prompt(questions)
+            .then(function(data) {
+                writeToFile("README.md", generateMarkdown(data));
+            })
+    }
+
+    init();

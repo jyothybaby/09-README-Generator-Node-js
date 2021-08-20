@@ -1,7 +1,8 @@
-## **jkiureg**
-![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)
+
+  # node js
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
-frnviruhg]\\
+abcdef
 ## Table of Contents 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,25 +12,26 @@ frnviruhg]\\
 - [question](#questions)
 
 ## Installation
-To install necessary dependencies, run the following command : "bufgdfug"
+To install necessary dependencies, run the following command : "inp install"
 
 ## Usage
-In order to use this application," ksdcudfgvurgvh"
+In order to use this application," abcdefg"
 
 ## License
 
-This project is licenced under the "BSD" license
+This project is licenced under the "MIT" license
 
 ## Contributing
 
- contributors: "kncudgfreugh"
+ contributors: "jyothy"
 ## Tests
 
-To run tests, run this command : "cleifghrt"
+To run tests, run this command : "npm index.js"
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at fdrjnguiregfu. You can find more of my work at
- [odvfhjiehgfr7u8gh](https://github.com/odvfhjiehgfr7u8gh/).
+If you have any questions about the repo, open an issue or contact me directly at " jyothy@gmail.com". You can find more of my work at
+ [jyothybaby](https://github.com/jyothybaby/).
 
- https://github.com/odvfhjiehgfr7u8gh/jkiureg
+ https://github.com/jyothybaby/node js
+
