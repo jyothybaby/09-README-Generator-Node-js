@@ -6,8 +6,8 @@
 Works i have done for this project:
 1. Created the repository in the GitHub and cloned in to the local machine
 2. Created .gitignore file using "touch .gitignore" command
-3. Run two commands in the cmd prompt:- npm install and nim install inquirer
-4. Updated .gitignore file with to contents, node_modules/ and .DS_Store - node_module and .DS_Store will not uploaded in to the github.
+3. Run two commands in the cmd prompt:- npm install and npm install inquirer
+4. Updated .gitignore file with two contents, node_modules/ and .DS_Store - node_module and .DS_Store will not uploaded in to the github.
 5. In this project there are two .js file: Index.js and generateMarkdown.js - Index.js contains all the questions and functions to write the answers to the README.MD file. generateMarkdown.js contains the Markdoun Template for the Readme file.
 6. If we want to test the program, just type "node index.js" in the command line prompt. Before running the command, check the present working directory (PWD).In command line, if we are not in the exact folder, then the application will throw an error.
 
@@ -15,6 +15,8 @@ Works i have done for this project:
 
 1. GitHub repository URL: https://github.com/jyothybaby/09-README-Generator-Node-js
 
-Screenshot:
+Screenshots:
+![screen-1](https://github.com/jyothybaby/09-README-Generator-Node-js/blob/main/screenshots/screenshot1.png)<br>
+![screen-1](https://github.com/jyothybaby/09-README-Generator-Node-js/blob/main/screenshots/screenshot2.png)<br>
 
 
