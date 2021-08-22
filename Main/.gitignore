@@ -1,6 +1,5 @@
-#Use of .gitignore file: if we dont want to push any modules or any fole in to your github repo, then we can include this. Example, npm folders are available for anyone, because it is open source.If any one want to use my code they can install those files in to their machines using a single commands.
 
-# node_module will not include
+# node_module will not upload to the GitHub
 node_modules/
 # avoiding system files
 .DS_Store/

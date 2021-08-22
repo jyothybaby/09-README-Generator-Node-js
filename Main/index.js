@@ -1,3 +1,4 @@
+//Importing the files fand folders to index.js
 const inquirer = require("inquirer");
 const fs = require("fs");
 //const utils = require("utils");
@@ -44,77 +45,77 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 // `;
 
 
-
+// All the questions in an array
 const questions = [
-        {
-            type:"input",
-            name:"title",
-            message: "What is the project Title?",
-        },
-        {
-            type:"input",
-            name:"description",
-            message: "Please provide your project description : ",
-        },
-        {
-            type:"input",
-            name:"command",
-            message: "Please provide the installation instruction for dependencies : ",
-        },
-        {
-            type:"input",
-            name:"usage",
-            message: "Please provide the project usage information : ",
-        },
-        {
-            type:"input",
-            name:"contributing",
-            message: "Please provide the project contributing parties : ",
-        },
-        {
-            type:"rawlist",
-            name:"license",
-            message: "Please provide the project license : ",
-            choices :["MIT", "ISC", "APACHE", "GPL", "BSD"],
-        },
-        {
-            type:"input",
-            name:"test",
-            message: "Please provide your project test command : ",
-        },
-        {
-            type:"input",
-            name:"username",
-            message: "What is your GitHub User name?  ",
-        },
-        {
-            type:"input",
-            name:"email",
-            message: "What is your Email Id: ?  ",
-        },
-        
-    ]
+    {
+        type: "input",
+        name: "title",
+        message: "What is the project Title?",
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "Please provide your project description : ",
+    },
+    {
+        type: "input",
+        name: "command",
+        message: "Please provide the installation instruction for dependencies : ",
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Please provide the project usage information : ",
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Please provide the project contributing parties : ",
+    },
+    {
+        type: "rawlist",
+        name: "license",
+        message: "Please provide the project license : ",
+        choices: ["MIT", "ISC", "APACHE", "GPL", "BSD"],
+    },
+    {
+        type: "input",
+        name: "test",
+        message: "Please provide your project test command : ",
+    },
+    {
+        type: "input",
+        name: "username",
+        message: "What is your GitHub User name?  ",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your Email Id: ?  ",
+    },
 
-    // .then((answers) => {
-    //     const readmeContent = markDownTemplate(answers);
-    //     fs.writeFile("README.MD", readmeContent, (err)=>
-    //     err? console.log(err): console.log("Sucessfully created the File!!")
-       
-    //     );
-    // });
+]
 
+// .then((answers) => {
+//     const readmeContent = markDownTemplate(answers);
+//     fs.writeFile("README.MD", readmeContent, (err)=>
+//     err? console.log(err): console.log("Sucessfully created the File!!")
 
-    function writeToFile(fileName, data) {
-        fs.writeFile(fileName,data,(err) => 
-        err? console.log(err): console.log("Sucessfully created the File!!")
-        )
-    }
+//     );
+// });
 
-    function init() {
-        inquirer.prompt(questions)
-            .then(function(data) {
-                writeToFile("README.md", generateMarkdown(data));
-            })
-    }
-
-    init();
+// Function for writing the answers to the File.
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log("Sucessfully created the File!!")
+    )
+}
+// This function invokes inquirer with questions
+function init() {
+    inquirer.prompt(questions)
+        .then(function (data) {
+            writeToFile("README.md", generateMarkdown(data));
+        })
+}
+// initialization function 
+init();
