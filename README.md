@@ -14,7 +14,7 @@ Works i have done for this project:
 <b>Links for the project:</b><br>
 
 1. GitHub repository URL: https://github.com/jyothybaby/09-README-Generator-Node-js
-2. Video Location: https://drive.google.com/file/d/1yF8qa7yjfzKKP5j3gBWEsW3Lv5cmdGbx/view?usp=sharing
+2. Video Location: https://drive.google.com/file/d/1yF8qa7yjfzKKP5j3gBWEsW3Lv5cmdGbx/view?usp=sharing     (I think the Grading team needs to download this video for viewing.)
 
 Screenshots:
 ![screen-1](https://github.com/jyothybaby/09-README-Generator-Node-js/blob/main/screenshots/screenshot1.png)<br>
