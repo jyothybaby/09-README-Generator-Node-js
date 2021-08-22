@@ -15,7 +15,7 @@ When creating an open source project on GitHub, it’s important to have a high-
 To install necessary dependencies, run the following command : "npm install, npm install inquirer"
 
 ## Usage
-In order to use this application, " We can create a professional Readme file through command line ." 
+In order to use this application, " We can create a professional Readme file through command line." 
 
 ## License
 
@@ -23,7 +23,7 @@ This project is licenced under the "MIT" license
 
 ## Contributing
 
- contributors: "N/A "
+ contributors: "Jyothy.V Baby"
 ## Tests
 
 To run tests, run this command : "node index.js"
